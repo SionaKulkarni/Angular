@@ -1,0 +1,18 @@
+h1 {
+    color: #007bff;
+  }
+  
+  button {
+    margin: 10px 0;
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  

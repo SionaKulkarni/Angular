@@ -1,8 +1,10 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-modal',
-  imports: [],
+  standalone: true, // Add this for standalone component
+  imports: [NgIf], // Import NgIf to use *ngIf
   templateUrl: './modal.component.html',
   styleUrl: './modal.component.css'
 })

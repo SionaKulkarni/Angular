@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { RouterOutlet } from '@angular/router';
+import { FormsModule } from '@angular/forms';  // Required for ngModel
+import { CommonModule } from '@angular/common'; 
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [FormsModule],
+  standalone: true,  // Standalone component
+  imports: [CommonModule, FormsModule],  // ✅ Ensure FormsModule is imported here
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  name: string = '';
+  username: string = '';
 }

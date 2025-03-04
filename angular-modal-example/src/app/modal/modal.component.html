@@ -1,7 +1,6 @@
 <div *ngIf="showModal" class="modal" (click)="closeModal()">
-    <div class="modal-content" (click)="$event.stopPropagation()" role="dialog" aria-modal="true">
-      <span (click)="closeModal()" class="close">&times;</span>
-      <p>This is a modal dialog</p>
-    </div>
+  <div class="modal-content" (click)="$event.stopPropagation()" role="dialog" aria-modal="true">
+    <span (click)="closeModal()" class="close">&times;</span>
+    <p>This is a modal dialog</p>
   </div>
-  
+</div>
