@@ -1,0 +1,18 @@
+<div class="container">
+  <h2>Pagination Example</h2>
+
+  <p>Total Items: {{ data.length }}</p>
+
+  <ul class="list">
+    <li *ngFor="let item of paginatedData">{{ item }}</li>
+  </ul>
+
+  <div class="pagination-buttons">
+    <button (click)="goToFirstPage()" [disabled]="isFirstPage()">First</button>
+    <button (click)="prevPage()" [disabled]="isFirstPage()">Previous</button>
+    <button (click)="nextPage()" [disabled]="isLastPage()">Next</button>
+    <button (click)="goToLastPage()" [disabled]="isLastPage()">Last</button>
+  </div>
+
+  <p>Page {{ currentPage }} of {{ totalPages }}</p>
+</div>
