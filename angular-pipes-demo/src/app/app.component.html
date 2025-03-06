@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Angular Pipes Demo</h1>
+
+  <!-- Built-in Pipes -->
+  <h2>Built-in Pipes</h2>
+  <p><strong>Date Pipe:</strong> {{ currentDate | date: 'fullDate' }}</p>
+  <p><strong>Short Date Pipe:</strong> {{ currentDate | date: 'shortDate' }}</p>
+  <p><strong>Currency Pipe:</strong> {{ price | currency:'USD':true:'1.2-2' }}</p>
+  <p><strong>Uppercase Pipe:</strong> {{ message | uppercase }}</p>
+  <p><strong>Lowercase Pipe:</strong> {{ message | lowercase }}</p>
+
+  <!-- Custom Pipe -->
+  <h2>Custom Pipe (Title Case)</h2>
+  <p><strong>Original:</strong> {{ message }}</p>
+  <p><strong>Title Case:</strong> {{ message | titleCase }}</p>
+
+  <!-- Chaining Pipes -->
+  <h2>Chaining Pipes</h2>
+  <p><strong>Lowercase & Title Case:</strong> {{ message | lowercase | titleCase }}</p>
+  <p><strong>Currency & Uppercase:</strong> {{ price | currency:'USD':true:'1.0-2' | uppercase }}</p>
+</div>
